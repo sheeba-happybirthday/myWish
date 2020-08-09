@@ -9,9 +9,28 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, #eecda3, #ef629f);
+  font-family: "Amatic SC", cursive;
+  &::-webkit-scrollbar {
+    width: 25px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #343434;
+  }
+  &::-webkit-scrollbar-thumb {
+    width: 10px;
+    background: #d5d5d5;
+    border: 6px solid transparent;
+    border-radius: 100px;
+    background-clip: content-box;
+    &:active {
+      border: 6px solid transparent;
+      background: darken($color: #d5d5d5, $amount: 8);
+    }
+  }
 }
 
 @import "firstPart";
 @import "secondPart";
 @import "animation";
+@import "_utils.scss";

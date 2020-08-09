@@ -9,12 +9,25 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: "Poppins", sans-serif; }
+  background: linear-gradient(120deg, #eecda3, #ef629f);
+  font-family: "Amatic SC", cursive; }
+  body::-webkit-scrollbar {
+    width: 25px; }
+  body::-webkit-scrollbar-track {
+    background: #343434; }
+  body::-webkit-scrollbar-thumb {
+    width: 10px;
+    background: #d5d5d5;
+    border: 6px solid transparent;
+    border-radius: 100px;
+    background-clip: content-box; }
+    body::-webkit-scrollbar-thumb:active {
+      border: 6px solid transparent;
+      background: #c1c1c1; }
 
 .header {
   height: 100vh;
   width: 100%;
-  background: linear-gradient(120deg, #eecda3, #ef629f);
   position: relative; }
 
 .divHello {
@@ -84,7 +97,63 @@ body {
 #secondSection {
   height: 100vh;
   width: 100%;
-  background-color: #343434; }
+  position: relative; }
+
+.headingSection {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #343434;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4); }
+
+.Heading2 {
+  font-weight: 500;
+  color: #f5f5f5;
+  font-size: 28px;
+  display: block;
+  padding: 20px;
+  border: 5px; }
+
+.secondSectionMain {
+  position: absolute;
+  top: 10%;
+  width: 100%; }
+
+.card {
+  left: 50%;
+  margin-top: 25px;
+  transform: translateX(-50%);
+  position: relative;
+  background-color: #f5f5f5;
+  display: block;
+  width: 80%;
+  height: 250px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25); }
+  .card-Heading {
+    padding-left: 5px;
+    font-weight: 600;
+    margin-top: 5px;
+    font-family: "Poppins";
+    font-size: 20px; }
+  .card-Text {
+    padding: 5px;
+    font-family: "Poppins";
+    font-size: 12px; }
+  .card:not(:first-child) {
+    margin-top: 100px; }
+
+.cardImage {
+  width: 100%;
+  height: 60%;
+  background-size: cover;
+  background-position: top; }
+  .cardImage-1 {
+    background-image: url("https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80"); }
+  .cardImage-2 {
+    background-image: url("https://images.unsplash.com/photo-1596918501455-a17b090cb0a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"); }
 
 @keyframes animate {
   0% {
@@ -117,3 +186,6 @@ body {
   100% {
     opacity: 1;
     transform: translateY(0); } }
+
+.ml-1 {
+  margin-left: 10px; }

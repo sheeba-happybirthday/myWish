@@ -1,5 +1,70 @@
 #secondSection {
   height: 100vh;
   width: 100%;
+  position: relative;
+}
+
+.headingSection {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #343434;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba($color: #000000, $alpha: 0.4);
+}
+.Heading2 {
+  font-weight: 500;
+  color: #f5f5f5;
+  font-size: 28px;
+  display: block;
+  padding: 20px;
+  border: 5px;
+}
+
+.secondSectionMain {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+}
+
+.card {
+  left: 50%;
+  margin-top: 25px;
+  transform: translateX(-50%);
+  position: relative;
+  background-color: #f5f5f5;
+  display: block;
+  width: 80%;
+  height: 250px;
+  border-radius: 5px;
+  box-shadow: 0px 1px 8px rgba(#000, 0.25);
+  &-Heading {
+    padding-left: 5px;
+    font-weight: 600;
+    margin-top: 5px;
+    font-family: "Poppins";
+    font-size: 20px;
+  }
+  &-Text {
+    padding: 5px;
+    font-family: "Poppins";
+    font-size: 12px;
+  }
+  &:not(:first-child) {
+    margin-top: 100px;
+  }
+}
+.cardImage {
+  width: 100%;
+  height: 60%;
+  background-size: cover;
+  background-position: top;
+  &-1 {
+    background-image: url("https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80");
+  }
+
+  &-2 {
+    background-image: url("https://images.unsplash.com/photo-1596918501455-a17b090cb0a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  }
 }
