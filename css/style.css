@@ -142,8 +142,6 @@ body {
     padding: 5px;
     font-family: "Poppins";
     font-size: 12px; }
-  .card:not(:first-child) {
-    margin-top: 100px; }
 
 .cardImage {
   width: 100%;
