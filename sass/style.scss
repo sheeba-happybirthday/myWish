@@ -29,8 +29,8 @@ body {
     }
   }
 }
-
 @import "firstPart";
 @import "secondPart";
 @import "animation";
-@import "_utils.scss";
+@import "utils";
+@import "thirdPart";

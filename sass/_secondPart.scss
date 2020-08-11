@@ -53,15 +53,25 @@
   }
 }
 .cardImage {
+  position: relative;
   width: 100%;
   height: 60%;
   background-size: cover;
   background-position: top;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(#343434, 0.3), rgba(#000, 0.4));
+  }
   &-1 {
-    background-image: url("https://images.unsplash.com/photo-1593642702821-c8da6771f0c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80");
+    background-image: url("../Assets/image1.jpeg");
   }
 
   &-2 {
-    background-image: url("https://images.unsplash.com/photo-1596918501455-a17b090cb0a9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+    background-image: url("../Assets/image2.jpeg");
   }
 }

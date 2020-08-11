@@ -1,0 +1,31 @@
+.thirdSection {
+  width: 100;
+  height: 100vh;
+  position: relative;
+}
+.mainSection {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.lastHeading {
+  font-size: 46px;
+}
+
+.lookmore {
+  user-select: none;
+  text-decoration: none;
+  display: block;
+  margin-top: 25px;
+  color: darken($color: #f5f5f5, $amount: 80);
+  background: #f5f5f5;
+  text-align: center;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 5px 4px rgba($color: #000000, $alpha: 0.5);
+  &:active {
+    box-shadow: 0px 4px 3px rgba($color: #000000, $alpha: 0.2);
+  }
+}
