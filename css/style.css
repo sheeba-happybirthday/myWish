@@ -255,25 +255,25 @@ body {
 
 .forthSection {
   width: 100%;
-  height: 100vh;
-  max-height: 400%; }
+  max-height: 400%;
+  height: 100vh; }
 
 #forthSection {
-  display: flex;
   position: relative; }
 
 .list {
   position: absolute;
-  top: 50%;
+  top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
   height: 80vh;
   top: 50%;
   left: 50%;
-  border-radius: 5px;
-  text-align: center; }
+  border-radius: 5px; }
 
 .listItem {
+  top: 25%;
+  transform: translateY(-50%);
   height: calc((100% / 8) - 40px);
   margin: 15px;
   font-size: 16px;
